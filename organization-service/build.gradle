@@ -27,6 +27,7 @@ repositories {
 ext['springCloudVersion'] = 'Greenwich.M3'
 
 dependencies {
+	implementation('org.springframework.boot:spring-boot-starter-web')
 	implementation('org.springframework.boot:spring-boot-starter-actuator')
 	implementation('org.springframework.cloud:spring-cloud-starter-config')
 	implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
@@ -34,8 +35,8 @@ dependencies {
 	implementation('org.springframework.cloud:spring-cloud-openfeign-core')
 	implementation('org.springframework.cloud:spring-cloud-starter-sleuth')
 	
-	// https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
 	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+	compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
 	
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
