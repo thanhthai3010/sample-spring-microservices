@@ -1,4 +1,4 @@
-Microservices example with Spring Boot 2.0, Eureka and Spring Cloud
+## Microservices example with Spring Boot 2.0, Eureka and Spring Cloud
 
 1. Build jar for each service:
 - ```cd /project_name```
