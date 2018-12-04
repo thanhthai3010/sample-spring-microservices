@@ -13,112 +13,106 @@ public class Employee {
     }
 
     public Employee(Long organizationId, Long departmentId, String name, int age, String position) {
-	this.organizationId = organizationId;
-	this.departmentId = departmentId;
-	this.name = name;
-	this.age = age;
-	this.position = position;
+        this.organizationId = organizationId;
+        this.departmentId = departmentId;
+        this.name = name;
+        this.age = age;
+        this.position = position;
     }
 
     /**
      * @return the id
      */
     public Long getId() {
-	return id;
+        return id;
     }
 
     /**
-     * @param id
-     *            the id to set
+     * @param id the id to set
      */
     public void setId(Long id) {
-	this.id = id;
+        this.id = id;
     }
 
     /**
      * @return the organizationId
      */
     public Long getOrganizationId() {
-	return organizationId;
+        return organizationId;
     }
 
     /**
-     * @param organizationId
-     *            the organizationId to set
+     * @param organizationId the organizationId to set
      */
     public void setOrganizationId(Long organizationId) {
-	this.organizationId = organizationId;
+        this.organizationId = organizationId;
     }
 
     /**
      * @return the departmentId
      */
     public Long getDepartmentId() {
-	return departmentId;
+        return departmentId;
     }
 
     /**
-     * @param departmentId
-     *            the departmentId to set
+     * @param departmentId the departmentId to set
      */
     public void setDepartmentId(Long departmentId) {
-	this.departmentId = departmentId;
+        this.departmentId = departmentId;
     }
 
     /**
      * @return the name
      */
     public String getName() {
-	return name;
+        return name;
     }
 
     /**
-     * @param name
-     *            the name to set
+     * @param name the name to set
      */
     public void setName(String name) {
-	this.name = name;
+        this.name = name;
     }
 
     /**
      * @return the age
      */
     public int getAge() {
-	return age;
+        return age;
     }
 
     /**
-     * @param age
-     *            the age to set
+     * @param age the age to set
      */
     public void setAge(int age) {
-	this.age = age;
+        this.age = age;
     }
 
     /**
      * @return the position
      */
     public String getPosition() {
-	return position;
+        return position;
     }
 
     /**
-     * @param position
-     *            the position to set
+     * @param position the position to set
      */
     public void setPosition(String position) {
-	this.position = position;
+        this.position = position;
     }
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see java.lang.Object#toString()
      */
     @Override
     public String toString() {
-	return "Employee [id=" + id + ", organizationId=" + organizationId + ", departmentId=" + departmentId
-		+ ", name=" + name + ", age=" + age + ", position=" + position + "]";
+        return "Employee [id=" + id + ", organizationId=" + organizationId + ", departmentId=" + departmentId
+                + ", name=" + name + ", age=" + age + ", position=" + position + "]";
     }
 
 }

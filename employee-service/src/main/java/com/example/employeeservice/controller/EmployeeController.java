@@ -24,31 +24,31 @@ public class EmployeeController {
 
     @PostMapping("/")
     public Employee add(@RequestBody Employee employee) {
-	LOGGER.info("Employee add: {}", employee);
-	return repository.add(employee);
+        LOGGER.info("Employee add: {}", employee);
+        return repository.add(employee);
     }
 
     @GetMapping("/{id}")
     public Employee findById(@PathVariable("id") Long id) {
-	LOGGER.info("Employee find: id={}", id);
-	return repository.findById(id);
+        LOGGER.info("Employee find: id={}", id);
+        return repository.findById(id);
     }
 
     @GetMapping("/")
     public List<Employee> findAll() {
-	LOGGER.info("Employee find");
-	return repository.findAll();
+        LOGGER.info("Employee find");
+        return repository.findAll();
     }
 
     @GetMapping("/department/{departmentId}")
     public List<Employee> findByDepartment(@PathVariable("departmentId") Long departmentId) {
-	LOGGER.info("Employee find: departmentId={}", departmentId);
-	return repository.findByDepartment(departmentId);
+        LOGGER.info("Employee find: departmentId={}", departmentId);
+        return repository.findByDepartment(departmentId);
     }
 
     @GetMapping("/organization/{organizationId}")
     public List<Employee> findByOrganization(@PathVariable("organizationId") Long organizationId) {
-	LOGGER.info("Employee find: organizationId={}", organizationId);
-	return repository.findByOrganization(organizationId);
+        LOGGER.info("Employee find: organizationId={}", organizationId);
+        return repository.findByOrganization(organizationId);
     }
 }
